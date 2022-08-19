@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 1.5rem;
+	font-family: 'IBM Plex Sans', sans-serif;
+	background-color: #1B2430;
+	color: white;
+}
+ul{
+	list-style-type: none;
+	padding: 0.5rem;
+	text-align: right;
+	background-color: #1B2430;
+	margin: 0.5em;
+}
+li{
+	display: inline-block;
+	margin-inline: 0.5rem;
+}
+li a {
+	text-decoration: none;
+	border: 2px dashed yellow;
+	color: white;
+	padding: 0.1em;
+	border-radius: 10px;
+}
+li a:hover, li a:focus{
+	display: block;
+	background-color: yellow;
+	color: black;
+	margin: 0 auto;
+
+}
+.container{
+	display: grid;
+	grid-template-columns: 0.4fr 1fr;
+	margin: 4em;
+}
+.box{
+	width: 100%;
+	height: 100%;
+	background-color: whitesmoke;
+	justify-content: center;
+	text-align: center;
+	overflow: auto;
+}
+.box:nth-child(1){
+	border-radius: 50%;
+	width: 200px;
+	height:201px;
+	background-color: #1B2430;
+	border: 1px solid white;
+	margin-bottom: -10px;
+	overflow: hidden;
+	box-shadow: 5px 10x white;
+}
+.box:nth-child(2){
+	height: 75%%;
+	margin-top: 1.5em;
+	color: blueviolet;
+	background-color: inherit;
+	overflow: hidden;
+}
+#content{
+margin-right: 50%;
+text-align: center;
+margin-top: 1em;
+color: white;
+}
+.typewriter p{
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+.button img{
+	margin-left: 4.8em;
+	height: 50px;
+	justify-content: center;
+}
