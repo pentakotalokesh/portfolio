@@ -60,7 +60,6 @@ i{
 }
 @media screen and (max-width:768px) {
     .banner{
-        display: block;
         background-color: #f1f6f9;
         height: 100vh;
         width: 100%;
@@ -69,5 +68,7 @@ i{
         align-items: center;
         flex-direction: column;
     }
-    
+    .container{
+        display: none;
+    }
 }
