@@ -83,6 +83,9 @@
                 seconds = 0;
                 minutes++;
               }
+              else if(minutes >= 59){
+                hours++;
+              }
               else 
                 seconds++; 
             }, 1000);
