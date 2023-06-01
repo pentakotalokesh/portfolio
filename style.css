@@ -1,4 +1,5 @@
  @import url('https://fonts.googleapis.com/css2?family=Maitree&family=Merriweather&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -46,7 +47,7 @@ i{
 }
 #time{
     font-size: 3rem;
-    font-family:'Merriweather', serif ;
+    font-family: 'Poppins', sans-serif;
 }
 #day{
     color: #f1f6f9;
@@ -87,6 +88,24 @@ i{
 .circle2 h4{
     cursor: pointer;
     animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+.eqdetails{
+    width: 100%;
+}
+.tdata{
+    width: 100%;
+}
+.table{
+    width: 1000px;
+}
+.img{
+    width: 300px;
+    height: 300px;
+}
+.line{
+    width: 1px;
+    height: 200px;
+    border: 1px solid black;
 }
 @keyframes zoom-in-zoom-out {
     0% {
