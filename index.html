@@ -59,13 +59,7 @@
                   </div>
             </div>
             <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center flex-column">
-              <i class="bi bi-stopwatch p-0"style="font-size:40px"></i>
-              <h3 class="p-3">Focus Timer</h3>
-              <div class="circle p-3">
-                <div class="circle2">
-                  <h4 id="stopwatch">START</h4>
-                </div>
-              </div>
+              <img src="Assests/undraw_cloud_hosting_7xb1.svg" alt="" srcset="" width="400px">
               <a href="Assests/lokeshresume.pdf" download><button type="button" class="btn btn-dark p-3 text-center mt-3"><i class="bi bi-download"></i>Resume</button></a>
             </div>
 
@@ -75,29 +69,29 @@
       const stopwatch = document.getElementById("stopwatch");
       let hours = 0,minutes=0,seconds=0;
       var kill;
-          stopwatch.addEventListener("click",event=>{
-            if(stopwatch.innerText === 'START'){
-           kill = setInterval(() => {
-              stopwatch.innerHTML = hours.toString()+":"+minutes.toString()+":"+seconds.toString();
-              if(seconds >= 59){
-                seconds = 0;
-                minutes++;
-              }
-              else if(minutes >= 59){
-                hours++;
-              }
-              else 
-                seconds++; 
-            }, 1000);
-          }
-          else{
-            clearInterval(kill);
-            stopwatch.innerText="START";
-            seconds = 0;
-            minutes=0;
-            hours=0;
-          }
-        })
+        //   stopwatch.addEventListener("click",event=>{
+        //     if(stopwatch.innerText === 'START'){
+        //    kill = setInterval(() => {
+        //       stopwatch.innerHTML = hours.toString()+":"+minutes.toString()+":"+seconds.toString();
+        //       if(seconds >= 59){
+        //         seconds = 0;
+        //         minutes++;
+        //       }
+        //       else if(minutes >= 59){
+        //         hours++;
+        //       }
+        //       else 
+        //         seconds++; 
+        //     }, 1000);
+        //   }
+        //   else{
+        //     clearInterval(kill);
+        //     stopwatch.innerText="START";
+        //     seconds = 0;
+        //     minutes=0;
+        //     hours=0;
+        //   }
+        // })
       setInterval(time,1000);
       function time(){
         const time = document.getElementById("time");
