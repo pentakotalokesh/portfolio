@@ -1,122 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Lokesh</title>
-</head>
-<body>
-  <div class="banner">
-    <h2>It's not Responsive</h2>
-    <p>Working on it ....</p>
-  </div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/"><h1 class="mt-1">Lokesh</h1></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <img id="moon" src="Assests/moon.svg" width="20px" alt="" srcset="" class="mt-3">
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"><i class="bi bi-house-door"></i>Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="education.html"><i class="bi bi-book"></i>Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html"><i class="bi bi-kanban-fill"></i>Projects</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-4 text-center p-2">
-              <div class="card clock d-flex justify-content-center align-items-center p-3 mb-3">
-                <p id="time"></p>
-                <p id="day"></p>
-              </div>
-                <h2>Follow me 🎉</h2>
-                <div class="icons">
-                    <a href="https://github.com/pentakotalokesh/"><i class="bi bi-github"></i></a>
-                    <a href="https://www.linkedin.com/in/lokeshdeveloper/"><i class="bi bi-linkedin"></i></a>
-                    <a href="http://"><i class="bi bi-telegram"></i></a>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 d-flex justify-content-center p-2">
-                <div class="card shadow-effect" style="width: 18rem;">
-                    <img class="card-img-top" src="Assests/pic.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h2>Lokesh</h2>
-                      <p class="card-text">Full Stack Developer <br> Computer Science & Engineering</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center flex-column">
-             
-              <a href="Assests/lokeshresume.pdf" download><button type="button" class="btn btn-dark p-3 text-center mt-3"><i class="bi bi-download"></i>Resume</button></a>
-            </div>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Lokesh</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-icons">
+      <ul class="navbar-nav list-group list-group-horizontal">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html"><svg class="ms-1" xmlns="http://www.w3.org/2000/svg"
+              x="0px" y="0px" width="33" height="33" viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(3.55556,3.55556)">
+                  <path
+                    d="M36,10c-1.139,0 -2.27708,0.38661 -3.20508,1.16211l-21.27734,17.7793c-1.465,1.224 -1.96564,3.32881 -1.05664,5.00781c1.251,2.309 4.20051,2.79122 6.10352,1.19922l18.79492,-15.70313c0.371,-0.31 0.91025,-0.31 1.28125,0l18.79492,15.70313c0.748,0.626 1.6575,0.92969 2.5625,0.92969c1.173,0 2.33591,-0.51091 3.12891,-1.50391c1.377,-1.724 0.98597,-4.27055 -0.70703,-5.68555l-2.41992,-2.02148v-10.19922c0,-1.473 -1.19402,-2.66797 -2.66602,-2.66797h-2.66602c-1.473,0 -2.66797,1.19497 -2.66797,2.66797v3.51367l-10.79492,-9.01953c-0.928,-0.7755 -2.06608,-1.16211 -3.20508,-1.16211zM35.99609,22.92578l-22,18.37695v8.69727c0,4.418 3.582,8 8,8h28c4.418,0 8,-3.582 8,-8v-8.69727zM32,38h8c1.105,0 2,0.895 2,2v10h-12v-10c0,-1.105 0.895,-2 2,-2z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+            <div class="text-center">Home</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="education.html"><svg class="ms-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="32" height="33" viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(4,4)">
+                  <path
+                    d="M32,6c-14.359,0 -26,11.641 -26,26c0,14.359 11.641,26 26,26c14.359,0 26,-11.641 26,-26c0,-14.359 -11.641,-26 -26,-26zM14,44l1,-5.5l3,-0.5l1,6zM15,36v-4.5l3,1.5v3zM44,41c-0.676,2.704 -5.592,4.974 -11,5c-5.408,0.026 -10.324,-2.296 -11,-5l-2,-7l13,5l13,-6zM33,36l-19,-8l-1,-2l19,-5l20,4l-1,2z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+            <div class="text-center">Education</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html"><svg class="ms-3 mt-1" xmlns="http://www.w3.org/2000/svg" x="0px"
+              y="0px" width="29" height="30" viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M25,2c-12.69141,0 -23,10.30859 -23,23c0,9.83203 6.18359,18.24609 14.875,21.53125c0.51953,0.1875 1.08984,-0.07812 1.28125,-0.59375l4.96875,-13.09375c0.10156,-0.25391 0.09375,-0.53516 -0.01953,-0.78125c-0.10937,-0.25 -0.31641,-0.44141 -0.57422,-0.53125c-2.64453,-1 -4.53125,-3.52734 -4.53125,-6.53125c0,-3.87891 3.12109,-7 7,-7c3.87891,0 7,3.12109 7,7c0,3.00391 -1.88672,5.53125 -4.53125,6.53125c-0.25781,0.08984 -0.46484,0.28125 -0.57422,0.53125c-0.11328,0.24609 -0.12109,0.52734 -0.01953,0.78125l4.96875,13.09375c0.19141,0.51563 0.76172,0.78125 1.28125,0.59375c8.69141,-3.28516 14.875,-11.69922 14.875,-21.53125c0,-12.69141 -10.30859,-23 -23,-23zM25,4c11.60938,0 21,9.39063 21,21c0,8.62109 -5.26953,15.91797 -12.6875,19.15625l-4.25,-11.21875c2.91016,-1.49219 4.9375,-4.44922 4.9375,-7.9375c0,-4.95703 -4.04297,-9 -9,-9c-4.95703,0 -9,4.04297 -9,9c0,3.48828 2.02734,6.44531 4.9375,7.9375l-4.25,11.21875c-7.41797,-3.23828 -12.6875,-10.53516 -12.6875,-19.15625c0,-11.60937 9.39063,-21 21,-21z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+            <div class="text-center">Projects</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
+        <div class="text-center">
+          <h1 class="Header">HELLO</h1>
         </div>
+
+
       </div>
-    <script>
-      const stopwatch = document.getElementById("stopwatch");
-      let moon = document.getElementById("moon");
-      let hours = 0,minutes=0,seconds=0,manp=0;
-      var kill;
-      moon.addEventListener("click",()=>{
-      
-        if(manp == 0){
-          moon.src="Assests/sun.svg";
-          document.body.classList.add('dark-mode');
-          manp=1;
-        }
-        else{
-          moon.src="Assests/moon.svg";
-          document.body.classList.remove('dark-mode');
-          manp=0;
-        }
-      })
-        //   stopwatch.addEventListener("click",event=>{
-        //     if(stopwatch.innerText === 'START'){
-        //    kill = setInterval(() => {
-        //       stopwatch.innerHTML = hours.toString()+":"+minutes.toString()+":"+seconds.toString();
-        //       if(seconds >= 59){
-        //         seconds = 0;
-        //         minutes++;
-        //       }
-        //       else if(minutes >= 59){
-        //         hours++;
-        //       }
-        //       else 
-        //         seconds++; 
-        //     }, 1000);
-        //   }
-        //   else{
-        //     clearInterval(kill);
-        //     stopwatch.innerText="START";
-        //     seconds = 0;
-        //     minutes=0;
-        //     hours=0;
-        //   }
-        // })
-      setInterval(time,1000);
-      function time(){
-        const time = document.getElementById("time");
-        const date = document.getElementById("day");
-        const d = new Date();
-        time.innerHTML=d.toLocaleTimeString();;
-        date.innerHTML = d;
-      }
-    </script>
+
+      <div class="col-12 col-lg-4 col-md-12 d-flex flex-column justify-content-around align-items-center p-2"
+        style="height: 80vh;">
+        <div>
+          <img class="shadow-lg" alt="avatar2" src="./Assests/mega-creator.png" width="700" />
+        </div>
+        <div class="text-center">
+          <h1 class="Header">I'M</h1>
+        </div>
+
+
+
+      </div>
+      <div class="col-12 col-lg-4 col-md-12 d-flex justify-content-center align-items-center flex-column">
+        <div>
+          <h1 class="Header ms-4">LOKESH</h1>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <div class="container-fluid Captions">
+    <div class="scroll">
+      <div class="RightToLeft">
+        <p>REST API DEVELOPMENT</p>
+        <p>REACT JS</p>
+        <p>DJANGO REST FRAMEWORK</p>
+        <p>LEETCODE</p>
+        <p>C</p>
+        <p>C++</p>
+        <p>PYTHON 3</p>
+        <p>GIT</p>
+        <p>GITHUB</p>
+        <p>BOOTSTRAP 5</p>
+      </div>
+      <div class="LeftToRight">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>CHAKRAUI</p>
+        <p>JAVASCRIPT</p>
+        <p>#DRF</p>
+        <p>AWS</p>
+        <p>BACKEND</p>
+        <p>FRONTEND</p>
+        <p>MACHINE LEARNING</p>
+        <p>SQL</p>
+        <p>HEROKU</p>
+        <p>DEPLOYMENT</p>
+        <p>MAINTAINENCE</p>
+      </div>
+    </div>
+  </div>
+  <div class="container Education mt-2">
+    <div class="text-center">
+      <h1 class="mb-5 mt-5">EDUCATION QUALIFICATION</h1>
+      <h2>Bachelor's of Technology</h2>
+
+      <h3>Computer Science & Engineering</h3>
+      <h3>Dadi Institute of Engineering & Technology</h3>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <img src="./Assests/college.png" alt="" srcset="" width="300">
+      </div>
+      <div class="col-6">
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    ScrollReveal().reveal('.Captions');
+    ScrollReveal().reveal('.Education', { delay: 500, scale: 0.85 });
+
+  </script>
 </body>
+
 </html>
