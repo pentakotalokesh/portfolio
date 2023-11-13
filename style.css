@@ -26,6 +26,7 @@ body {
     radial-gradient(#006312 1.35px, #000000 1.35px); */
   background-size: 54px 54px;
   background-position: 0 0, 27px 27px;
+  overflow-x: hidden;
 }
 .dark-mode {
   background-color: #2c2a2e;
@@ -38,15 +39,17 @@ body {
   padding: 1em;
   top: 0;
   position: sticky;
+  z-index: 999;
 }
 .nav-icons {
   padding: 0.4em;
   background: rgba(0, 255, 47, 0.1);
   border-radius: 75px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.7px);
-  -webkit-backdrop-filter: blur(6.7px);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
   border: 1px solid rgba(0, 99, 18, 0.3);
+  z-index: 999;
 }
 .nav-link {
   padding: 0 1em 0.2em 1em;
@@ -74,9 +77,6 @@ i {
 .Captions {
   background-color: #2c2a2e;
   background: rgba(0, 255, 47, 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.7px);
-  -webkit-backdrop-filter: blur(6.7px);
   overflow: hidden;
   border: 1px solid rgba(0, 99, 18, 0.3);
 }
@@ -110,6 +110,26 @@ i {
   to {
     transform: translateX(100%);
   }
+}
+
+.scrolling-wrapper {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.Projects .row {
+  padding: 1em;
+}
+
+.card {
+  background: rgba(0, 255, 47, 0.1);
+}
+
+.card .btn {
+  background-color: #f1f6f9;
+  color: rgb(0, 90, 0);
+  font-weight: 800;
+  border-radius: 0;
 }
 
 #time {
